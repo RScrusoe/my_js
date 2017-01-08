@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+<html>
+<head>
+<script type="text/javascript">
+	function fun(x,y){
+		this.name = x;
+		this.property = y;
+		this.method = happy;
+	}
+	function happy(){
+		//return (this.name + " is happy!");
+		print(this.name + " is happy!");
+	}
+	
+	function validator(){
+		if (document.checkbox.box.checked)
+			//print("Hey");
+			alert("Yea it's is checked!");
+		else
+			alert("Nope, not checked!");
+	}
+	var tmp = 'g';
+	function change(){
+		
+		var img = document.getElementById('G');
+		if(tmp=='g'){
+		img.src = "F_logo.png";
+		tmp = 'f';
+	}
+		else{
+			img.src = "G_logo.png";
+			tmp = 'g';
+		}
+	}
+</script>
+</head>
+
+<body>
+<img src="G_logo.png" id="G" onclick="change()" height="200" width="200">
+<hr/>
+<script type="text/javascript">
+	var X = new Array(new fun("Alice Wonders"), new fun('Steve Slanders'), new fun('Ashley Stevens'));
+	
+	function print(x) {
+		document.write(x + "<br />");		
+	}
+	function print_array(x){
+		document.write(x.join(', ') + "<br />");
+	}
+	var x = 5;
+	print(x);
+	(X[2]).method();
+	X[3] = new fun("Jess Michaels");
+	X[3].method();
+/*
+	var tv_series = new Array("friends","himym", "bb", "daredevil","dexter");
+
+	print_array(tv_series);
+	tv_series.pop();
+	print_array(tv_series);
+	var ur_tv = prompt("Enter your fav TV series:","any series name");
+	tv_series.push(ur_tv);
+	print_array(tv_series);
+	tv_series.sort();
+	print_array(tv_series);
+
+
+	var asd = prompt("Enter name:","")
+	print("Hello " + asd);
+*/
+	print("<hr/>");
+
+	print(Math.PI);
+
+	print("<hr/>");
+
+
+	//setInterval('print("Rahul! ")',300);	
+</script>
+<form>
+	Username: <input type="text" name='name' />
+	Password: <input type="password" name='pass'/>
+	<input type="submit" value="Submit!"/>
+</form>
+
+<form name='checkbox'>
+	<input type="checkbox" name="box">
+	<input type="button" value="press me" onClick='validator()' name="checkbutton">
+</form>
+<script type="text/javascript">
+	var x = document.forms[0].length;
+	print(x);
+	var element1 = document.forms[0].elements[1].name;
+	print(element1);
+</script>
+<form>
+	<input type="button" value="Touch me" onclick="print('They pressed me :(')" name="button">
+</form>
+
+
+</body>
+</html>

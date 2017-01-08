@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+<html>
+<head>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	function print(x) {
+		document.write(x + "<br />");		
+	}
+
+	function clock(){
+		var now = new Date();
+		var h = now.getHours();
+		var m = now.getMinutes();
+		var s = now.getSeconds();
+		var string = h+":" + m +":" + s;
+		print(string);
+	}
+	
+	//while (true){
+		//clock();
+
+		setInterval("clock()",1000);	
+
+	//setInterval('print("Rahul! ")',300);	
+	
+	print("asdasd")
+</script>
+
+</body>
+</html>
