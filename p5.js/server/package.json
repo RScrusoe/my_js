@@ -1,0 +1,21 @@
+{
+  "name": "online_sketch",
+  "version": "1.0.0",
+  "description": "online sketch",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "online",
+    "sketch",
+    "book"
+  ],
+  "author": "RS Rahul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "socket.io": "^2.0.3"
+  }
+}

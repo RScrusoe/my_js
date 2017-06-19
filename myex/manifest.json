@@ -1,0 +1,17 @@
+{
+	
+	"name":"menu",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description":"Crusoe",
+	"browser_action":{
+		"default_icon":"f.png",
+		"default_title":"FB",
+		"default_popup":"index.html"
+	},
+	
+
+	"icons": {
+	"128":"f.png"
+	}
+}

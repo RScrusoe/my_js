@@ -1,0 +1,13 @@
+.menu{
+  width:50%;
+  margin:30px auto;
+}
+.bf,.lunch,.snacks,.dinner{
+  border:1px solid #ccc;
+}
+h3{
+  border-right:1px solid #ccc;
+  line-height:40px;
+  margin:0 10px;
+  text-align:center;
+}

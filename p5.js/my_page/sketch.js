@@ -2,8 +2,8 @@ var w = 1280;
 var h = 620;
 var r = 20;
 function setup() {
-	w= w/2;
-	h=h/2;
+	w= w/1.5;
+	h=h/1.5;
 
   createCanvas(w,h);
   

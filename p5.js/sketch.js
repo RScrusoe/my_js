@@ -1,64 +1,37 @@
-var w = 1280;
-var h = 620;
-var x = w/4;
-var y = h/2;
-var dir = 30;
-var r = 25;
-var speed = 15;
+var w = 600;
+var h = 600;
+var stars = [];
+var speed;
+value = 100;
 function setup() {
+ createCanvas(w,h);
+  noStroke();
 
-  createCanvas(w,h);
+  
 }
 
-function isStrikingX(){
-	if (x > r && (x < (w-r))){
-		return 0;	}
-	else{
-		text("FUCK!!", 10, 150);
-		return 1;
-	}
-}
 
-function isStrikingY(){
-	
-	if (y > r && (y < (h-r))){
-		return 0;	}
-	else{
-		text("FUCK!!", 10, 60);
-		text(x, 10, 90);
-		text(y, 10, 120);
-
-		return 1;
-	}
-}
 function draw() {
-	background(mouseX*255/w,mouseX*255/w,mouseX*255/w);
-
-text(dir, 10, 30);
-
-	fill(255,0,0);
-	if (!(isStrikingX()) && !(isStrikingY())){
-		ellipse(x,y,2*r,2*r);
-		x = x + speed*cos(dir*PI/180);
-		y = y - speed*sin(dir*PI/180);
-
+	fill(200);
+  rect(5,5,50,20);
+  fill(0);
+  text("clear", 18, 18);
+  print('x='+  mouseX);
+  print('y=' + mouseY);
+ fill('blue');
 	}
 
+function touchMoved() {
+	if (!(mouseX>=5 && mouseX<=75 && mouseY>=5 && mouseY<=25)){
+  ellipse(mouseX, mouseY, 25, 25);
+}
+  // prevent default
+  return false;
+}
 
-	else if (isStrikingX){
+function mousePressed() {
+  if (mouseX>=5 && mouseX<=75 && mouseY>=5 && mouseY<=25)
+  {background(255);}
 
-		dir = 0 - dir;
-		
-		x = x + speed*cos(dir*PI/180);
-		y = y - speed*sin(dir*PI/180);
-		ellipse(x,y,2*r,2*r);
-	}
-
-	else if(isStrikingY()){
-		dir = 180 - dir;
-		x = x + speed*cos(dir*PI/180);
-		y = y - speed*sin(dir*PI/180);
-		ellipse(x,y,2*r,2*r);
-
-	}
-	}
+  return false;
+}
