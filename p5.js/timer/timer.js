@@ -12,7 +12,7 @@ function convertS(s) {
 
 function setup() {
  noCanvas();
- textSize(60)
+ textSize(60  )
  var params = getURLParams()
  if(params.min){
   t0 = int(params.min*60);
