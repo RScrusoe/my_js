@@ -1,0 +1,31 @@
+<html>
+  <head>
+	<!-- <meta http-equiv="refresh" content="2" >  -->
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.sound.min.js"></script>
+<!--     <script src="https://cdn.rawgit.com/IDMNYU/p5.js-speech/054fb229/lib/p5.speech.js"></script>
+    <script src="speechRec.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+if (annyang) {
+  // Let's define a command.
+  var commands = {
+    'hello': function() { alert('Hello world!'); }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening.
+  annyang.start();
+  console.log('asdadsasd');
+}
+</script>
+  </head>
+  <body>
+
+
+  </body>
+</html>
+

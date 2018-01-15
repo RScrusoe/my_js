@@ -1,0 +1,384 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Hostel 5 Official Website">
+  <meta name="author" content="Bijoy Singh Kochar"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hostel 5 IIT Bombay</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Hostel 5 IIT Bombay">
+      <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.js"></script>
+    <script src="scrape.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="mdl/material.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/custom_styles.css">
+</head>
+
+<body>
+<div class="hostel-5-layout hostel-5-layout--blogpost mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  
+<header class="mdl-layout__header translucent_header">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title"><a href="index.php">Hostel 5</a></span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation -->
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="council.php">Council</a><a class="mdl-navigation__link" href="staff.php">Staff</a><a class="mdl-navigation__link" href="db_gallery.php">Gallery</a><a class="mdl-navigation__link" href="https://gymkhana.iitb.ac.in/sso/oauth/authorize/?client_id=rIGZhqcTh0lEnHfTLHwlYbPpEMVQMLZma7UK9awL&response_type=code&state=user&scope=basic profile ldap program send_mail">Login</a><a class="mdl-navigation__link" href="FAQs.pdf">FAQs</a>    </nav>
+  </div>
+
+  
+</header>
+
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">Hostel 5</span>
+  <nav class="mdl-navigation">
+    <a class="mdl-navigation__link"  href="db_entry.php?content=2">Sports</a><a class="mdl-navigation__link"  href="db_entry.php?content=4">Cult</a><a class="mdl-navigation__link"  href="db_entry.php?content=5">Tech</a><a class="mdl-navigation__link"  href="db_entry.php?content=6">Maint</a><a class="mdl-navigation__link"  href="db_entry.php?content=3">Mess</a><a class="mdl-navigation__link"  href="council.php">Council</a><a class="mdl-navigation__link"  href="newsfeed.php">News</a><a class="mdl-navigation__link"  href="db_entry.php?content=1">Alumni</a><a class="mdl-navigation__link"  href="db_gallery.php">Gallery</a><a class="mdl-navigation__link"  href="user.php">Login</a><a class="mdl-navigation__link" target="_blank" href="https://gymkhana.iitb.ac.in/sso/oauth/authorize/?client_id=rIGZhqcTh0lEnHfTLHwlYbPpEMVQMLZma7UK9awL&response_type=code&state=admin&scope=basic profile ldap program send_mail">Admin</a><a class="mdl-navigation__link" target="_blank" href="http://gymkhana.iitb.ac.in/cms_new/">Complaint Portal</a>  </nav>
+</div>
+  <main class="mdl-layout__content">
+    <div class="hostel-5-layout__posts mdl-grid">
+      <div
+          class="mdl-card mdl-cell mdl-cell--12-col
+          mdl-cell--12-col-desktop">
+        <div class="mdl-card__media mdl-color-text--grey-50"
+          style="background-image: url('images/mess/menu.jpg');">
+          <h3><a href="">Menu</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong></strong>
+            <span ></span>
+            <div></div>
+          </div>
+        </div>
+      </div><div
+          class="mdl-card mdl-cell mdl-cell--6-col
+          mdl-cell--4-col-desktop">
+        <div class="mdl-card__media mdl-color-text--grey-50"
+          style="background-image: url('');">
+          <h3><a href="">Monday</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong></strong>
+            <span ></span>
+            <div><b>Breakfast : </b> <span>Poori Bhaji
+BBJ, Tea, Coffee
+Sprouted Moong
+Egg/Omelette/ Bhurji
+Banana</span><br/><br/><b>Lunch : </b> <span>Veg Makhanwala, Black Chana Masala
+Roti
+Tomato Rice
+Chana Dal
+
+Rasna (orange)
+Cucumber, Carrot, Onion
+Masala Papad
+
+Fried Green Chillies
+Extra Omelette/Bhurji/Dahi</span><br/><br/><b>Tiffin : </b> <span>Plain Maggi & Veg Maggi, 
+BBJ, Tea, Milk, Coffee</span><br/><br/><b>Dinner : </b> <span>Dahi Aloo, Methi Malai Mutter
+Roti
+Dal Khichdi
+Tur Dal
+Cucumber, Carrot, Onion
+
+
+Seviya Kheer
+Orange
+Extra  Chicken Biryani & Gravy,  Dahi</span><br/><br/></div>
+          </div>
+        </div>
+      </div><div
+          class="mdl-card mdl-cell mdl-cell--6-col
+          mdl-cell--4-col-desktop">
+        <div class="mdl-card__media mdl-color-text--grey-50"
+          style="background-image: url('');">
+          <h3><a href="">Tuesday</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong></strong>
+            <span ></span>
+            <div><b>Breakfast : </b> <span>Poha(w/o aloo), Besan Sev, Matki
+BBJ, Tea, Coffee
+Boiled Black Chana
+Egg/Omelette/ Bhurji
+Banana</span><br/><br/><b>Lunch : </b> <span>Paneer Mutter 
+Tandori  Roti, Chapatti
+Lemon Rice
+Dal Tadka
+
+Roohafza
+Cucumber, Tomato, Onion
+Fryums
+
+Green Chilly Thecha
+Extra  Omelette/Bhurji/Dahi</span><br/><br/><b>Tiffin : </b> <span>Pasta
+BBJ, Tea, Milk, Coffee</span><br/><br/><b>Dinner : </b> <span>Masoor tomato curry, Veg Tawa Dry
+Roti
+Curd Rice
+Dal Fry
+Cucumber, Carrot, Onion
+
+Fried Papad
+Ice-cream
+Guava
+Extra Paneer Chilly, Dahi</span><br/><br/></div>
+          </div>
+        </div>
+      </div><div
+          class="mdl-card mdl-cell mdl-cell--6-col
+          mdl-cell--4-col-desktop">
+        <div class="mdl-card__media mdl-color-text--grey-50"
+          style="background-image: url('');">
+          <h3><a href="">Wednesday</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong></strong>
+            <span ></span>
+            <div><b>Breakfast : </b> <span>Panner Paratha, Dahi
+BBJ, Tea, Coffee
+Sweet  Corn
+Egg/Omelette/ Bhurji
+Pear</span><br/><br/><b>Lunch : </b> <span>Dum Aloo, Bhindi Fry
+Plain Paratha
+Jeera Rice
+Dal Tadka
+
+Chaas
+Cucumber, Carrot, Onion
+
+
+Fried Green Chillies
+Extra Omelette/Bhurji/Dahi</span><br/><br/><b>Tiffin : </b> <span>Veg. Cheese Sandwich
+BBJ, Tea, Milk, Coffee</span><br/><br/><b>Dinner : </b> <span>Kabuli Chana Masala, Tamatar ki Chutney
+Roti
+Neutrela Rice
+Dal Fry
+Cucumber, Carrot, Onion
+
+Masala Papad
+Gulab Jamun
+Watermelon 
+Extra Chicken Lollipop, Dahi</span><br/><br/></div>
+          </div>
+        </div>
+      </div><div
+          class="mdl-card mdl-cell mdl-cell--6-col
+          mdl-cell--4-col-desktop">
+        <div class="mdl-card__media mdl-color-text--grey-50"
+          style="background-image: url('');">
+          <h3><a href="">Thursday</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong></strong>
+            <span ></span>
+            <div><b>Breakfast : </b> <span>Idli-Sambhar, Idli Fry, Coconut Chutney
+BBJ, Tea, Coffee
+Sweet Corn
+Egg/Omelette/ Bhurji
+Banana</span><br/><br/><b>Lunch : </b> <span>Aloo Mutter Curry, Soya Chilli Dry
+Roti
+Lemon Rice
+Dal Fry
+
+Nimbu Pani, Dahi
+Cucumber, Beet Root, Onion
+Fryums
+
+Green Chilly Thecha
+Extra Omelette/Bhurji/Dahi</span><br/><br/><b>Tiffin : </b> <span>Sambosa/Kachori, Peanut butter
+BBJ, Tea, Milk, Coffee</span><br/><br/><b>Dinner : </b> <span>Paneer Tikka/Paneer Kadai
+Tandoori Roti, Roti
+Veg Fried Rice
+Dal Tadka
+Cucumber, Carrot, Onion
+
+
+Moong Dal Halwa
+Papaya 
+Extra Paneer Bhurji, Dahi</span><br/><br/></div>
+          </div>
+        </div>
+      </div><div
+          class="mdl-card mdl-cell mdl-cell--6-col
+          mdl-cell--4-col-desktop">
+        <div class="mdl-card__media mdl-color-text--grey-50"
+          style="background-image: url('');">
+          <h3><a href="">Friday</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong></strong>
+            <span ></span>
+            <div><b>Breakfast : </b> <span>Rawa Upma, Coconut Chutney
+BBJ, Tea, Coffee
+Boiled Groundnut
+Egg/Omelette/ Bhurji
+Banana</span><br/><br/><b>Lunch : </b> <span> Rajma, Aloo Fry
+Puri, Roti
+Tomato Rice
+Dal Fry
+
+Rasna(Orange)
+Sprouted salad
+Roasted Papad
+Shreekhand
+Fried Green Chillies
+Extra Omelette/Bhurji/Dahi</span><br/><br/><b>Tiffin : </b> <span>Pav Bhaji/ Misal Pav
+BBJ, Tea, Milk, Coffee</span><br/><br/><b>Dinner : </b> <span>Chawli Masala, Lehsun ki Chatani
+Roti
+Lemon Rice
+Dal Fry
+Cucumber, Carrot, Onion
+Dahi
+Roasted Papad
+
+Mosambi
+Extra Butter chicken/chicken handi/kadhai chicken, dahi</span><br/><br/></div>
+          </div>
+        </div>
+      </div><div
+          class="mdl-card mdl-cell mdl-cell--6-col
+          mdl-cell--4-col-desktop">
+        <div class="mdl-card__media mdl-color-text--grey-50"
+          style="background-image: url('');">
+          <h3><a href="">Saturday</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong></strong>
+            <span ></span>
+            <div><b>Breakfast : </b> <span>Onion Uttapam, Coconut Chutney, Sambhar
+BBJ, Tea, Coffee
+Sprouted Moong
+Egg/Omelette/ Bhurji
+Apple</span><br/><br/><b>Lunch : </b> <span>Chhole
+Bhature, Roti
+Jeera Rice
+Tur Dal
+
+Lassi
+Sprouted salad, Imli Chutney
+Roasted Papad
+Kalakand Barfi
+Fried Green Chillies
+Extra Omelette/Bhurji/Dahi</span><br/><br/><b>Tiffin : </b> <span>Masala Dosa, Sambhar, Coconut Chutney
+BBJ, Tea, Milk, Coffee</span><br/><br/><b>Dinner : </b> <span>Sev Bhaji, Veg Kadai
+Roti
+Dal Khichadi
+Masoor Dal,
+Cucumber, Carrot, Onion
+Boondi Raita
+Fried Papad
+
+Muskmelon
+Extra Egg Curry, Dahi</span><br/><br/></div>
+          </div>
+        </div>
+      </div><div
+          class="mdl-card mdl-cell mdl-cell--6-col
+          mdl-cell--4-col-desktop">
+        <div class="mdl-card__media mdl-color-text--grey-50"
+          style="background-image: url('');">
+          <h3><a href="">Sunday</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong></strong>
+            <span ></span>
+            <div><b>Breakfast : </b> <span>Gobhi Parantha / Aalo Paratha ,Dahi
+BBJ, Tea, Coffee
+Boiled Ground nuts
+Egg/Omelette/ Bhurji
+Banana</span><br/><br/><b>Lunch : </b> <span>Gatte Ki Sabzi,Moong Aloo,
+Roti
+Coconut Rice
+Kaala Masoor Dal
+
+Rasna(Mango)
+Cucumber, Radish, Onion
+Fried Papad
+
+Fried Green Chillies
+Extra Omelette/Bhurji/Dahi</span><br/><br/><b>Tiffin : </b> <span>Pani Puri/Vada Pav,Imli & Pudhina Chutney, Masala 
+ Peanut Butter
+BBJ, Tea, Milk, Coffee</span><br/><br/><b>Dinner : </b> <span>Veg Kolhapuri, Staff  Shimla Curry
+Roti
+Veg Biryani
+Chana Dal, 
+Cucumber, Carrot, Onion
+Veg Raita
+
+Kheer Rice
+Pineapple
+Extra Dahi</span><br/><br/></div>
+          </div>
+        </div>
+      </div>    </div>
+
+    <footer class="mdl-mega-footer" style="width:100%; text-align: center;">
+  <div style="margin-bottom:20px;">
+    <a target="_blank" href="https://www.facebook.com/hostel5.iitb">
+      <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+      <span class="visuallyhidden">Facebook</span>
+    </button>
+  </a>
+  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.bijoykochar.hostelapp"
+    style="text-decoration: none; color: #ffffff; opacity: 0.46;">
+    <i style="font-size: 36px;" class="material-icons">shop</i>
+  </a>
+  </div>
+&copy; 2015 <b>Bijoy Singh Kochar</b> | <b>Hostel 5, IIT Bombay</b>
+</footer>
+  </main>
+  <div class="mdl-layout__obfuscator"></div>
+</div>
+
+<script src="mdl/material.min.js"></script>
+</body>
+</html>
+
+
