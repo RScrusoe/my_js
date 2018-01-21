@@ -1,3 +1,4 @@
+console.log('starting...');
 var tweets;
 var Twit = require('twit');
 
